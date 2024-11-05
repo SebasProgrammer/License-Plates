@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Demo TP1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+        integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/async/3.2.0/async.min.js"
+        integrity="sha512-6K6+H87tLdCWvY5ml9ZQXLRlPlDEt8uXmtELhuJRgFyEDv6JvndWHg3jadJuBVGPEhhA2AAt+ROMC2V7EvTIWw=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.roboflow.com/0.2.26/roboflow.js"></script>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="loading">
+
+<video id="video" autoplay muted playsinline></video>
+<div id="fps"></div>
+
+<div id="leftSidebar">
+    <h2>Cámaras Disponibles</h2>
+    <select id="cameraDropdown">
+    </select>
+    <br>
+
+    <div class="select-container">
+        <label for="cameraSelectBox">Seleccionar Camara</label>
+        
+        <select id="cameraSelectBox">
+            <option value="on" selected>Camara Prendida</option>
+            <option value="off">Camara Apagada</option>
+        </select>
+    </div>
+</div>
+
+<!-- Sidebar HTML -->
+<div id="rightSidebar">
+    <div id="logoutIcon" class="logout-icon">
+        <i class="fas fa-sign-out-alt"></i>
+    </div>
+    <br>
+</div>
+
+<script src="./main.js"></script>
+
+</body>
+</html>
